@@ -1,0 +1,104 @@
+<head>
+    <title>MusicPulse</title>
+    <p>crotchets, quavers, triplets, semiquavers and quintuplets</p>
+    <style>
+        .rectangle {
+            background-color: #1C1C1C;
+            height: 100px;
+            width: 500px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 0 50px; 
+            box-sizing: border-box;
+        }    
+
+        .crotchet {
+            width: 50px;
+            height: 50px;
+            background-color: #2F6690;
+            border-radius: 50%;
+            animation: crotchetpulse 2s infinite;
+        }
+        @keyframes crotchetpulse {
+            0%, 100% {
+            transform: scale(1);
+            }
+            50% {
+            transform: scale(1.2);
+            }
+        }
+        .quaver {
+            width: 50px;
+            height: 50px;
+            background-color: #3A7CA5;
+            border-radius: 50%;
+            animation: quaverpulse 2s infinite;
+        }
+        @keyframes quaverpulse {
+            0%, 50%, 100% {
+            transform: scale(1);
+            }
+            25%, 75% {
+            transform: scale(1.2);
+            }
+        }
+        .triplet {
+            width: 50px;
+            height: 50px;
+            background-color: #D9DCD6;
+            border-radius: 50%;
+            animation: tripletpulse 2s infinite;
+        }
+        @keyframes tripletpulse {
+            0%, 33%, 66%, 100% {
+            transform: scale(1);
+            }
+            16.5%, 49.5%, 82.5% {
+            transform: scale(1.2);
+            }
+        }
+        .semiquaver {
+            width: 50px;
+            height: 50px;
+            background-color: #16425B;
+            border-radius: 50%;
+            animation: semiquaverpulse 2s infinite;
+        }
+        @keyframes semiquaverpulse {
+            0%, 25%, 50%, 75%, 100% {
+            transform: scale(1);
+            }
+            12.5%, 37.5%, 62.5%, 87.5% {
+            transform: scale(1.2);
+            }
+        }
+        .quintuplet {
+            width: 50px;
+            height: 50px;
+            background-color: #81C3D7;
+            border-radius: 50%;
+            animation: quintupletpulse 2s infinite;
+        }
+        @keyframes quintupletpulse {
+            0%, 20%, 40%, 60%, 80%, 100% {
+            transform: scale(1);
+            }
+            10%, 30%, 50%, 70%, 90% {
+            transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class= "rectangle">
+        <div class= "crotchet"></div>
+        <div class= "quaver"></div>
+        <div class= "triplet"></div>
+        <div class= "semiquaver"></div>
+        <div class= "quintuplet"></div>
+    </div>
+</body>
+</html>
+
+<!-- cascade ysws: 81 mins -->
