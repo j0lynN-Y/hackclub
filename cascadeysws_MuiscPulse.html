@@ -4,12 +4,13 @@
         .rectangle {
             background-color: #1C1C1C;
             height: 100px;
-            width: 500px;
+            width: 600px;
             display: flex;
             justify-content: space-between; 
             align-items: center; 
             padding: 0 50px; 
             box-sizing: border-box;
+            margin-top: 10px;
         }    
 
         .crotchet {
@@ -87,23 +88,78 @@
             transform: scale(1.2);
             }
         }
+        .sextuplet {
+            width: 50px;
+            height: 50px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            animation: sextupletpulse 2s infinite;
+        }
+        @keyframes sextupletpulse {
+            0%, 16.67%, 33.33%, 50%, 66.67%, 83.33%, 100% {
+            transform: scale(1);
+            }
+            8.33%, 25%, 41.67%, 58.33%, 75%, 91.67% {
+            transform: scale(1.2);
+            }
+        }
+  
+        li {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
-    <p>MusicPulse shows how 2, 3, 4 and 5 notes fit into 1 beat.</p>
-    <li>Crotchets have 1 note in 1 beat</li>
-    <li>Quavers have 2 notes in 1 beat</li>
-    <li>Triplets have 3 notes in 1 beat</li>
-    <li>Semiquavers have 4 notes in 1 beat</li>
-    <li>Quintuplets have 5 notes in 1 beat</li>
+    <h3>MusicPulse shows how 2, 3, 4 and 5 notes fit into 1 beat.</h3>
+    <p>This is currently running at 120bpm!</p>
+    <div class = "moreinfo">
+        <li>Crotchets have 1 note in 1 beat</li>
+        <li>Quavers have 2 notes in 1 beat</li>
+        <li>Triplets have 3 notes in 1 beat</li>
+        <li>Semiquavers have 4 notes in 1 beat</li>
+        <li>Quintuplets have 5 notes in 1 beat</li>
+        <li>Sextuplets have 6 notes in 1 beat</li>
+    </div>
     <div class= "rectangle">
         <div class= "crotchet"></div>
         <div class= "quaver"></div>
         <div class= "triplet"></div>
         <div class= "semiquaver"></div>
         <div class= "quintuplet"></div>
+        <div class= "sextuplet"></div>
     </div>
-</body>
+    <h3>Here are some cool facts about the different note durations!</h3>
+    <div class ="theorytips">
+        <div class="crotchetinfo">
+            <p>Crotchet or Quarter Note</p>
+            <li>It is commonly used to establish the basic beat in a piece of music.</li>
+            <li>For example, in <a href="https://youtu.be/nQ89OhiwJrE?si=zUqWGkUmvL7Spm2p">Twinkle Twinkle Little Star</a>, the steady beat is a perfect example of crotchets.</li>
+        </div>
+        <div class = "quaverinfo">
+            <p>Quaver or Eighth Note</p>
+            <li>It is often used to create a faster rhythm.</li>
+            <li>For example, in <a href="https://youtu.be/wfF0zHeU3Zs?si=6YsKxO0C5y6_XIpG">Beethoven's Fur Elise</a>, the opening motif uses alternating quavers.</li>
+        </div>
+        <div class = "semiquaverinfo">
+            <p>Semiquaver or Sixteenth Note</p>
+            <li>It is often used to create intricate and quick rhythmic patterns.</li>
+            <li>For example, in <a href="https://youtu.be/e3nSvIiBNFo?si=0O2ln_AOZY0OZ5aY">Vivaldi's Spring from The Four Seasons</a>, the violin part has rapid semiquavers.</li>
+        </div>
+        <div class = "tripletinfo">
+            <p>Triplets</p>
+            <li>It adds a feeling of movement and swing.</li>
+            <li>For example, in <a href="https://youtu.be/3H0SRv8QNwk?si=klr3Z2tJUkkpZCVC">Chopin's Minute Waltz</a>, the triplets provide motion and elegance.</li>
+        </div>
+        <div class = "quintupletinfo">
+            <p>Quintuplets</p>
+            <li>It is often used for complex, unconventional rhythms.</li>
+            <li>For example, in <a href="https://youtu.be/4gKHw7KJ7pE?si=1z6wM-uxPhD9Hyy8">Holst's The Planets - Mars, the Bringer of War</a>, quintuplets contribute to the irregular warlike rhythm.</li>
+        </div>
+        <div class = "sextupletinfo">
+            <p>Sextuplets</p>
+            <li>Creates rapid flowing phrases.</li>
+            <li>For example, in <a href="https://youtu.be/ALqOKq0M6ho?si=xCT7pmrSuEBQVUSh">Franz Liszt's Hungarian Rhapsody No. 2</a>, sextuplets make very virtuosic rapid passages.</li>
+        </div>
+    </div>
+</div>
 </html>
-
-<!-- cascade ysws: 81 mins -->
